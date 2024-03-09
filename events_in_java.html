@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+ <!-- <body  onload="fun()">  -->
+ <!-- <body onunload="fun()"> -->
+<body onscroll="bg()">
+ <!-- <body onresize="siz()">    -->
+    
+    <p onclick="bg2()" >click</p>
+    <p ondblclick="fun()">Doube click</p>
+    <p oncontextmenu="fun()">right click</p>
+    <p onmouseenter="fun()">mouse hover</p>
+    <p onmouseout="fun()">mouse out</p>
+               <!-- mouse down event work similar like click -->
+    <p onmousedown="fun()">mouse down</p>
+    <p onmouseup="fun()">mouse up</p>
+    <p onmousewheel="fun()">mouse Leave</p>
+
+               <!-- key events will work for forms and body tag only  -->
+    <p onkeypress="fun()">On keypress</p>
+    <p onkeyup="fun()">key up</p>
+
+               <!-- Remaining are window events work for body only  -->
+    <p >load</p>
+    <p >Unload</p>
+    <p >Resize</p>
+    <p >Scroll</p>
+    
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, incidunt cum mollitia quia distinctio culpa explicabo rerum fugit blanditiis. Consequuntur ab, molestias odit illum qui facere eos quibusdam ullam accusantium corrupti esse itaque dolorem! Possimus laborum ea aliquam natus ad reprehenderit vitae minima assumenda, asperiores officia voluptatem autem, magnam repellat? Quam ipsam fugit dolore quisquam vitae veniam eveniet praesentium amet, nihil enim ipsa ex tempore dolor, iste odio esse sed eligendi in deleniti quae vero omnis. Commodi aspernatur quisquam, obcaecati itaque culpa eius modi. Quo quos eius, earum dolore aliquam illum tempora nobis ut minus distinctio ab quasi excepturi error aperiam nesciunt accusamus pariatur aut expedita modi perspiciatis asperiores? Cupiditate sequi nam eaque commodi recusandae at repellendus esse deleniti minima nostrum facere, dolorum obcaecati facilis! Fuga quos veniam vel quae blanditiis. Deleniti, laboriosam nam est, optio aliquid unde placeat, ex incidunt delectus quis beatae? Deleniti quibusdam consequatur suscipit sit aliquam, quo rem tempore. Sunt nostrum sapiente id quos labore, delectus autem, distinctio cum impedit corporis fugit, iste modi fuga natus harum? Nisi debitis porro, quasi sit blanditiis sapiente voluptas voluptate velit aliquam aut vero totam. Obcaecati aut animi exercitationem aliquam expedita culpa, ea neque, repellat inventore placeat ipsam incidunt natus suscipit quos at libero fugit deserunt ducimus optio illum repudiandae cum eius laboriosam quod. Consectetur consequatur porro ex assumenda id aliquid exercitationem expedita dignissimos unde ipsum atque aliquam voluptas magnam, quam quo aspernatur, rem suscipit voluptates quas ratione repellendus laboriosam quod facilis? Id vel magnam et beatae quasi, doloremque rerum cupiditate minus nostrum, obcaecati quibusdam deleniti iusto soluta, similique explicabo ab odit voluptatum quo necessitatibus eligendi voluptatem consectetur dolore! Mollitia dolorem deleniti voluptatibus eveniet aperiam assumenda ipsum. Odio voluptas mollitia harum ea aperiam quae nihil labore nostrum? Nostrum, et quo doloribus recusandae, nisi reiciendis libero hic expedita qui illum totam.</p>
+
+    <script>
+       function fun(){
+           alert("i am fun 1");
+       }
+       function fun2(){
+           alert("i am fun 2");
+       }
+       function bg2(){
+    
+            var clr="red";
+          document.getElementById("para").style.backgroundColor=clr; 
+         
+           
+       }
+
+       function siz(){
+           document.getElementById("para").style.backgroundColor="yellow";
+       }
+
+       function bg(){
+        //    document.getElementById('para').style.backgroundcolor="red";
+           document.getElementById('para').style.backgroundColor="red";
+           document.getElementById('para').style.fontSize="100px";
+           document.getElementById('para').style.animationName="zain";
+           document.getElementById('para').style.animationIterationCount="infinite";
+       }
+    </script>
+
+</body>
+</html>
