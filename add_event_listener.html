@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus amet quos qui asperiores rem at maxime illum, nemo sunt, accusamus porro veritatis voluptatibus, culpa tenetur excepturi nostrum recusandae quod ea!</p>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus amet quos qui asperiores rem at maxime illum, nemo sunt, accusamus porro veritatis voluptatibus, culpa tenetur excepturi nostrum recusandae quod ea!</p>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus amet quos qui asperiores rem at maxime illum, nemo sunt, accusamus porro veritatis voluptatibus, culpa tenetur excepturi nostrum recusandae quod ea!</p>
+
+    <script>
+        var a=document.getElementById("para");
+        // a.onmouseenter=fun;
+
+        a.onmouseleave=clean;
+
+        function clean(){
+    a.style.backgroundColor="white";
+        }
+    a.addEventListener("click",fun);
+    a.addEventListener("dblclick",fun);
+    a.addEventListener("contextmenu",fun);
+    // a.addEventListener("mouseenter",fun);
+    a.addEventListener("mouseleave",clean);
+
+    
+function fun(){
+    a.style.backgroundColor="yellow";
+}
+
+    </script>
+
+
+
+</body>
+</html>
